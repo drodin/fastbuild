@@ -31,9 +31,6 @@
                             .LZ4CompilerOptions = ' -O2'        // Compile with optimizations even in debug to improve performance
                           ]
     .LZ4Options_x64ClangLinux  = .LZ4Options_x64Linux
-    .LZ4Options_x64OSX  = [
-                            .LZ4CompilerOptions = ' -O2'        // Compile with optimizations even in debug to improve performance
-                          ]
     .LZ4Options_ARMOSX  = [
                             .LZ4CompilerOptions = ' -O2'        // Compile with optimizations even in debug to improve performance
                           ]
@@ -96,7 +93,7 @@
             ^ProjectConfigs             + .ProjectConfig
         #endif
         #if __OSX__
-            .ProjectConfig              = [ .Config = '$BuildConfigName$'   .Target = '$ProjectName$-x64OSX-$BuildConfigName$' ]
+            .ProjectConfig              = [ .Config = '$BuildConfigName$'   .Target = '$ProjectName$-ARMOSX-$BuildConfigName$' ]
             ^ProjectConfigs             + .ProjectConfig
         #endif
     }

@@ -31,11 +31,7 @@ ObjectList( 'ObjectList' )
         Using( .ToolChain_Clang_Linux )
     #endif
     #if __OSX__
-        #if __ARM64__
             Using( .ToolChain_Clang_ARMOSX )
-        #else
-            Using( .ToolChain_Clang_OSX )
-        #endif
     #endif
 
     .CompilerInputFiles         = 'File.cpp'

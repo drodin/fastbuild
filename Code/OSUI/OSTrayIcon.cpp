@@ -55,10 +55,10 @@ OSTrayIcon::OSTrayIcon( OSWindow * parentWindow, const AString & toolTip )
         // Display
         Shell_NotifyIcon( NIM_ADD, &m_NotifyIconData );
     #elif defined( __OSX__ )
-        size_t size;
-        void * ptr = getsectiondata( &_mh_execute_header, "binary", "trayicon", &size );
-        ASSERT( ptr && size );
-        m_Handle = TrayIconOSX_Create( ptr, size );
+        //size_t size;
+        //void * ptr = getsectiondata( &_mh_execute_header, "binary", "trayicon", &size );
+        //ASSERT( ptr && size );
+        //m_Handle = TrayIconOSX_Create( ptr, size );
         (void)parentWindow;
         (void)toolTip;
     #else

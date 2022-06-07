@@ -65,8 +65,8 @@ FBuildStats TestBuildFBuild::BuildInternal( FBuildTestOptions options, bool useD
         targets.EmplaceBack( "All-x64Linux-Debug" );
         targets.EmplaceBack( "All-x64ClangLinux-Release" );
     #elif defined( __OSX__ )
-        targets.EmplaceBack( "All-x64OSX-Debug" );
-        targets.EmplaceBack( "All-x64OSX-Release" );
+        targets.EmplaceBack( "All-ARMOSX-Debug" );
+        targets.EmplaceBack( "All-ARMOSX-Release" );
     #else
         #error Unknown platform
     #endif

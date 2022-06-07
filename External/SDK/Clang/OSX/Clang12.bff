@@ -24,7 +24,7 @@ Compiler( 'Compiler-Clang12' )
 //------------------------------------------------------------------------------
 .ToolChain_Clang_OSX =
 [
-    .Platform                       = 'x64OSX'
+    .Platform                       = 'ARMOSX'
 
     // Compiler Options
     .Compiler                       = 'Compiler-Clang12'

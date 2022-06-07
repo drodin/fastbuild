@@ -5,13 +5,13 @@
 Using( .StandardEnvironment )
 Settings {}
 
-ObjectList( 'Main-x64OSX-Debug' )
+ObjectList( 'Main-ARMOSX-Debug' )
 {
     .CompilerInputPath  = 'Code/' // dummy - no actual code here
     .CompilerOutputPath = '$Out$/Test/ProjectGeneration/Debug/'
 }
 
-ObjectList( 'Main-x64OSX-Release' )
+ObjectList( 'Main-ARMOSX-Release' )
 {
     .CompilerInputPath  = 'Code/' // dummy - no actual code here
     .CompilerOutputPath = '$Out$/Test/ProjectGeneration/Release/'
@@ -20,12 +20,12 @@ ObjectList( 'Main-x64OSX-Release' )
 .DebugConfig =
 [
     .Config = 'Debug'
-    .Target = 'Main-x64OSX-Debug'
+    .Target = 'Main-ARMOSX-Debug'
 ]
 .ReleaseConfig =
 [
     .Config = 'Release'
-    .Target = 'Main-x64OSX-Release'
+    .Target = 'Main-ARMOSX-Release'
 ]
 
 XCodeProject( 'XCodeProj' )

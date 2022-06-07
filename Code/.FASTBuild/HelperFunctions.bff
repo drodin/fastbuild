@@ -57,9 +57,9 @@ function CreateCommonAliases( .ProjectName )
         Alias( '$ProjectName$-TSan' )            { .Targets = { '$ProjectName$-X64Linux-TSan',    '$ProjectName$-X64ClangLinux-TSan' } }
     #endif
     #if __OSX__
-        Alias( '$ProjectName$-Debug' )           { .Targets = { '$ProjectName$-X64OSX-Debug' } }
-        Alias( '$ProjectName$-Profile' )         { .Targets = { '$ProjectName$-X64OSX-Profile' } }
-        Alias( '$ProjectName$-Release' )         { .Targets = { '$ProjectName$-X64OSX-Release' } }
+        Alias( '$ProjectName$-Debug' )           { .Targets = { '$ProjectName$-ARMOSX-Debug' } }
+        Alias( '$ProjectName$-Profile' )         { .Targets = { '$ProjectName$-ARMOSX-Profile' } }
+        Alias( '$ProjectName$-Release' )         { .Targets = { '$ProjectName$-ARMOSX-Release' } }
     #endif
 
     // Per-Platform
@@ -67,7 +67,7 @@ function CreateCommonAliases( .ProjectName )
     Alias( '$ProjectName$-X64Clang' )        { .Targets = { '$ProjectName$-X64Clang-Debug', '$ProjectName$-X64Clang-Release', '$ProjectName$-X64Clang-Profile' } }
     Alias( '$ProjectName$-X64Linux' )        { .Targets = { '$ProjectName$-X64Linux-Debug', '$ProjectName$-X64Linux-Release', '$ProjectName$-X64Linux-Profile', '$ProjectName$-X64Linux-ASan', '$ProjectName$-X64Linux-TSan' } }
     Alias( '$ProjectName$-X64ClangLinux' )   { .Targets = { '$ProjectName$-X64ClangLinux-Debug', '$ProjectName$-X64ClangLinux-Release', '$ProjectName$-X64ClangLinux-Profile', '$ProjectName$-X64ClangLinux-ASan', '$ProjectName$-X64ClangLinux-MSan', '$ProjectName$-X64ClangLinux-TSan' } }
-    Alias( '$ProjectName$-X64OSX' )          { .Targets = { '$ProjectName$-X64OSX-Debug', '$ProjectName$-X64OSX-Release', '$ProjectName$-X64OSX-Profile' } }
+    Alias( '$ProjectName$-ARMOSX' )          { .Targets = { '$ProjectName$-ARMOSX-Debug', '$ProjectName$-ARMOSX-Release', '$ProjectName$-ARMOSX-Profile' } }
 
     // All
     Alias( '$ProjectName$' )

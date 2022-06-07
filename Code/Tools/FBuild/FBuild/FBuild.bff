@@ -86,7 +86,7 @@
             ^ProjectConfigs             + .ProjectConfig
         #endif
         #if __OSX__
-            .ProjectConfig              = [ .Config = '$BuildConfigName$'   .Target = '$ProjectName$-x64OSX-$BuildConfigName$' ]
+            .ProjectConfig              = [ .Config = '$BuildConfigName$'   .Target = '$ProjectName$-ARMOSX-$BuildConfigName$' ]
             ^ProjectConfigs             + .ProjectConfig
         #endif
     }
